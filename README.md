@@ -21,8 +21,8 @@ Simple Laravel console app that calculates if an array of integers follows Benfo
 
 ## Installation
 ```
-git clone LINK
-cd Benford's-law
+git clone git@github.com:pardamike/benfords-law.git
+cd benfords-law
 cp .env.example .env
 docker compose up -d
 ```
@@ -30,13 +30,13 @@ docker compose up -d
 ## Console Command Usage
 To use, simply call the `Benford's-law:run` Artisan command and pass in a comma or space separated list of integers
 ```
-docker exec Benford's-law-laravel.test-1 php artisan Benford's-law:run <LIST OF INTEGERS>
+docker exec benfords-law-laravel.test-1 php artisan Benford's-law:run <LIST OF INTEGERS>
 ```
 
 ## Running Tests
 There are some basic unit tests for the `BenfordsLawService.php` class, to run them, simply run:
 ```
-docker exec Benford's-law-laravel.test-1 php artisan test
+docker exec benfords-law-laravel.test-1 php artisan test
 ```
 
 ## Example Output
