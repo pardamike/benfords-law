@@ -48,7 +48,7 @@ class BenfordsLawService
             }
 
             if ($occuranceFrequencyCounts[$k] === 0 || $data['withinRange'] === 'No') {
-                $returnData['summary'] = "FAIL: Distribution of or more numbers fall below Benfords Law - using variance threshold of {$this->variance}%";
+                $returnData['summary'] = "FAIL: Distribution of one or more numbers fall below Benfords Law - using variance threshold of {$this->variance}%";
             }
         }
 

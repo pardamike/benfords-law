@@ -26,7 +26,7 @@ class BenfordsLawServiceTest extends TestCase
         $this->assertStringContainsString('Please ensure all items are positive and are integers', $result['summary']);
 
         $result = $this->benfordService->analyzeForBenfordsLaw(BenfordsLawHelperData::WILL_NOT_PASS);
-        $this->assertStringContainsString('FAIL: Distribution of or more numbers fall below Benfords Law', $result['summary']);
+        $this->assertStringContainsString('FAIL: Distribution of one or more numbers fall below Benfords Law', $result['summary']);
 
         $result = $this->benfordService->analyzeForBenfordsLaw(BenfordsLawHelperData::WILL_PASS);
         $this->assertStringContainsString('SUCCESS: This data set follows Benfords Law!', $result['summary']);
