@@ -17,7 +17,7 @@ Simple Laravel console app that calculates if an array of integers follows Benfo
 
 ## Prerequisites
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
-- This application does not have a custom URL and will just run on `localhost`, make sure this is not blocked by another container or modify the [docker-compose.yml]()
+- This application does not have a custom URL and will just run on `localhost`, make sure this is not blocked by another container or modify the [docker-compose.yml](https://github.com/pardamike/benfords-law/blob/main/docker-compose.yml)
 
 ## Installation
 ```
