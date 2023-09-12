@@ -39,14 +39,40 @@ There are some basic unit tests for the `BenfordsLawService.php` class, to run t
 docker exec benfords-law-laravel.test-1 php artisan test
 ```
 
-## Example Output
+## Example Console Output
 **Success**
-<br>
-<img width="463" alt="benford-success" src="https://github.com/pardamike/benfords-law/assets/10131645/0a71e085-31c1-4a56-a910-5140ec2748d8">
-<br>
-<br>
-<br>
+```
+SUCCESS: This data set follows Benfords Law!
++-----+------+-------+-------------+-------------------------+
+|  n  | Freq | Pct   | Benford Pct | Within Variance (+/-2%) |
++-----+------+-------+-------------+-------------------------+
+| 1   | 960  | 30.54 | 30.1        | Yes                     |
+| 2   | 580  | 18.45 | 17.6        | Yes                     |
+| 3   | 381  | 12.12 | 12.5        | Yes                     |
+| 4   | 297  | 9.45  | 9.7         | Yes                     |
+| 5   | 234  | 7.45  | 7.9         | Yes                     |
+| 6   | 203  | 6.46  | 6.7         | Yes                     |
+| 7   | 173  | 5.50  | 5.8         | Yes                     |
+| 8   | 163  | 5.19  | 5.1         | Yes                     |
+| 9   | 152  | 4.84  | 4.6         | Yes                     |
++-----+------+-------+-------------+-------------------------+
+```
+
 **Failure**
-<br>
-<img width="678" alt="benford-fail" src="https://github.com/pardamike/benfords-law/assets/10131645/da1cfde2-52da-40e4-9c23-9c5fc8f1365f">
+```
+FAIL: Distribution of or more numbers fall below Benfords Law - using variance threshold of 2%
++-----+------+-------+-------------+-------------------------+
+|  n  | Freq | Pct   | Benford Pct | Within Variance (+/-2%) |
++-----+------+-------+-------------+-------------------------+
+| 1   | 344  | 10.90 | 30.1        | No                      |
+| 2   | 356  | 11.28 | 17.6        | No                      |
+| 3   | 337  | 10.68 | 12.5        | Yes                     |
+| 4   | 353  | 11.19 | 9.7         | Yes                     |
+| 5   | 350  | 11.09 | 7.9         | No                      |
+| 6   | 354  | 11.22 | 6.7         | No                      |
+| 7   | 369  | 11.69 | 5.8         | No                      |
+| 8   | 333  | 10.55 | 5.1         | No                      |
+| 9   | 360  | 11.41 | 4.6         | No                      |
++-----+------+-------+-------------+-------------------------+
+```
 
