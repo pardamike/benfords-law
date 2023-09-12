@@ -28,9 +28,9 @@ docker compose up -d
 ```
 
 ## Console Command Usage
-To use, simply call the `Benford's-law:run` Artisan command and pass in a comma or space separated list of integers
+To use, simply call the `benfords-law:run` Artisan command and pass in a comma or space separated list of integers
 ```
-docker exec benfords-law-laravel.test-1 php artisan Benford's-law:run <LIST OF INTEGERS>
+docker exec benfords-law-laravel.test-1 php artisan benfords-law:run <LIST OF INTEGERS>
 ```
 
 ## Running Tests
