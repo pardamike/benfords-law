@@ -44,6 +44,8 @@ docker exec benfords-law-laravel.test-1 php artisan test
 
 <img width="463" alt="benford-success" src="https://github.com/pardamike/benfords-law/assets/10131645/0a71e085-31c1-4a56-a910-5140ec2748d8">
 
+
+
 **Failure**
 
 <img width="678" alt="benford-fail" src="https://github.com/pardamike/benfords-law/assets/10131645/da1cfde2-52da-40e4-9c23-9c5fc8f1365f">
